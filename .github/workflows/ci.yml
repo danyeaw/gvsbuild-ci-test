@@ -13,6 +13,6 @@ jobs:
       - name: Install GTK4 (Windows)
         run: |
           py -m venv "C:\Program Files (x86)\venv"
-          "C:\Program Files (x86)\venv\Scripts\activate.ps1"
+          & "C:\Program Files (x86)\venv\Scripts\activate.ps1"
           py -m pip install gvsbuild
           gvsbuild build gdk-pixbuf
