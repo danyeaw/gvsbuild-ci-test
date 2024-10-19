@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: Install GTK4 (Windows)
         run: |
-          pipx install gvsbuild
-          gvsbuild build --enable-gi gtk4
+          py -m venv .venv
+          .\.venv\Scripts\activate.ps1
+          py -m pip install gvsbuild
+          gvsbuild build gtk4
