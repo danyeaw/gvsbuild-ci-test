@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Install GTK4 (Windows)
         run: |
+          choco install ninja
           py -m venv "C:\Program Files (x86)\venv"
           & "C:\Program Files (x86)\venv\Scripts\activate.ps1"
           py -m pip install gvsbuild
