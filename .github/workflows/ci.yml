@@ -13,7 +13,5 @@ jobs:
       - name: Install GTK4 (Windows)
         run: |
           choco install ninja
-          py -m venv "C:\Program Files (x86)\venv"
-          & "C:\Program Files (x86)\venv\Scripts\activate.ps1"
-          py -m pip install gvsbuild
+          py -m pip install git+https://github.com/wingtk/gvsbuild/archive/glib-fix-shebang.zip
           gvsbuild build gdk-pixbuf
