@@ -13,5 +13,5 @@ jobs:
       - name: Install GTK4 (Windows)
         run: |
           choco install ninja
-          py -m pip install git+https://github.com/wingtk/gvsbuild/archive/glib-fix-shebang.zip
+          py -m pip install git+https://github.com/wingtk/gvsbuild.git@glib-fix-shebang
           gvsbuild build gdk-pixbuf
