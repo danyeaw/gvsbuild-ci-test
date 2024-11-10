@@ -14,4 +14,4 @@ jobs:
         run: |
           choco install ninja
           py -m pip install git+https://github.com/wingtk/gvsbuild.git@glib-fix-shebang
-          gvsbuild build gdk-pixbuf
+          py -m gvsbuild build gdk-pixbuf
